@@ -3,9 +3,8 @@
 
 ## 소개
 
-본 코드는 KITRI/ BEST OF THE BEST 14기 내에서 제작되었습니다.
-
-Author : 강현우(_SAJA)
+### 본 코드는 KITRI/ BEST OF THE BEST 14기 내에서 제작되었습니다.
+### Author : 강현우(_SAJA)
 
 IR_Collector.ps1 는 Windows 환경에서 침해사고(Incident Response) 초기 대응을 위해 설계된 PowerShell 기반 자동 수집 스크립트입니다.
 
