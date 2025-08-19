@@ -46,7 +46,7 @@ IR_Collector.ps1 는 Windows 환경에서 침해사고(Incident Response) 초기
 
 ## 사용 방법
 
-powershell -ExecutionPolicy Bypass -File .\IR_Collector.ps1
+`powershell -ExecutionPolicy Bypass -File .\IR_Collector.ps1`
 
 
 ## 주의 사항
