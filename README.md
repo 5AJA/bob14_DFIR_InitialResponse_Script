@@ -1,8 +1,10 @@
 # Windows Incident Response Collector (IR_Collector.ps1)
 
+
 ## 소개
 IR_Collector.ps1 는 Windows 환경에서 침해사고(Incident Response) 초기 대응을 위해 설계된 PowerShell 기반 자동 수집 스크립트입니다.
 보안 담당자, 포렌식 분석가, 그리고 사고 대응팀이 현장에서 빠르게 시스템 상태를 확보하고 증거를 보존할 수 있도록 다양한 정보를 체계적으로 수집합니다.
+
 
 ## 주요 기능
 
@@ -32,6 +34,7 @@ IR_Collector.ps1 는 Windows 환경에서 침해사고(Incident Response) 초기
 23. 수집된 모든 파일에 대해 SHA256 해시 생성
 24. 결과물을 ZIP 아카이브로 자동 패키징
 
+
 ## 특징
 
 - PowerShell 5.1 호환성: Windows 7 이상에서 바로 실행 가능
@@ -40,26 +43,11 @@ IR_Collector.ps1 는 Windows 환경에서 침해사고(Incident Response) 초기
 - 무결성 검증: 수집된 아티팩트의 해시값 생성 → 법적 증거 보존에 유리
 - ZIP 아카이브 생성: 단일 패키지로 정리되어 전달·보관 용이
 
-## 출력 구조
-
-- 스크립트 실행 시, 지정한 출력 경로에 IR_{호스트명}_{타임스탬프} 폴더가 생성됩니다.
-IR_HOSTNAME_20250820_015200/
-├── 00_now.txt
-├── 00_boot.txt
-├── 02_systeminfo.txt
-├── 10_volumes.csv
-├── 12_processes.csv
-├── 30_net_ipconfig.txt
-├── 31_net_tcp.csv
-├── 40_sessions_quser.txt
-├── 44_users_local.csv
-├── 50_run_hklm.txt
-├── 52_uninstall_hklm.reg
-├── 99_hashes.txt
-└── IR_HOSTNAME_20250820_015200.zip
 
 ## 사용 방법
+
 powershell -ExecutionPolicy Bypass -File .\IR_Collector.ps1
+
 
 ## 주의 사항
 
